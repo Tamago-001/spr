@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Ink Battle 3D</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Three.js -->
+<script type="module">
+
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js";
+
+window.THREE = THREE;
+
+</script>
+</head>
+
+<body>
+
+<!-- タイトル画面 -->
+<div id="titleScreen">
+
+<h1>INK BATTLE 3D</h1>
+
+<button id="playBtn">
+PLAY
+</button>
+
+<button id="settingBtn">
+SETTINGS
+</button>
+
+</div>
+
+<!-- HUD -->
+<div id="hud">
+
+<div id="crosshair"></div>
+
+<div id="inkBarContainer">
+<div id="inkBar"></div>
+</div>
+
+<div id="weaponName">
+Shooter
+</div>
+
+<div id="fpsCounter">
+0 FPS
+</div>
+
+</div>
+
+<!-- スマホ操作 -->
+<div id="mobileControls">
+
+<div id="leftJoystick"></div>
+
+<div id="rightJoystick"></div>
+
+<button id="jumpBtn">JUMP</button>
+
+<button id="fireBtn">FIRE</button>
+
+</div>
+
+<canvas id="game"></canvas>
+
+<script type="module" src="main.js"></script>
+
+</body>
+</html>
